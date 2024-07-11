@@ -155,7 +155,7 @@ copyButton.addEventListener('click', () => {
         funcArr.push(Getrandomlowercase);
 
     if(NumbersCheckBox.checked)
-        funcArr.push(Getrandomlowercase);
+        funcArr.push(GetramdomNumber);
 
     if(SymbolsCheckbox.checked)
         funcArr.push(GetrandomSymbol);
