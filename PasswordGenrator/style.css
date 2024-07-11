@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: poppins;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(151, 150, 240), rgb(251, 199, 212));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.maincontainer{
+    max-width: 300px;
+    background: linear-gradient(135deg, rgb(206, 159, 252) 10%, rgb(115, 103, 240) 100%);
+
+    padding: 40px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.Password_text{
+color: white;
+font-size: 20px;
+font-weight: bold;
+}
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+    
+}
+.password-length{
+    display: flex;
+    justify-content: space-between;
+}
+.display{
+    border: none;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+.copybtn{
+    font-size: 20px;
+    border: none;
+    background-color: rgb(157, 157, 219);
+    color: white;
+}
+.password-length{
+    color: white;
+    font-size: 18px;
+}
+.checkboxes{
+    color: white;
+    font-weight: 500;
+}
+.strength-indigator{
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 400;
+}
+.strength-indigator{
+    display: flex;
+    justify-content: space-between;
+}
+.strength-light{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 7px;
+    box-shadow: 0px 0px 10px 3px white;
+}
+.Generate-password{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+        color: whitesmoke;
+        background-color: grey;
+        box-shadow: 0px 0px 5px 3px rgb(196, 196, 196);
+
+}
