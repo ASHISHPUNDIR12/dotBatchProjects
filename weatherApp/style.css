@@ -12,7 +12,7 @@ html , body{
 .wrapper{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(109.6deg, rgb(25, 170, 209) 11.3%, rgb(21, 65, 249) 69.9%);
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
      display: flex;
     justify-content: center;
     align-items: center; 
@@ -24,7 +24,7 @@ html , body{
     width: 50px;
 }
 .container{
-    background: rgb(165, 180, 245);
+    /* background: rgb(165, 180, 245); */
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
@@ -70,5 +70,40 @@ html , body{
     border: none;
     border-radius: 50px;
 
+}
+.weatherResult{
+    color: rgb(39, 0, 39);
+}
+.weatherResult p {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    
+}
+.Temp{
+    font-size: 40px;
+    font-weight: bold;
+}
+.tempStatus{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+
+}
+.tempStatus div {
+    margin: 10px;
+    padding: 10px;
+   
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.weatherCondition{
+    margin-left: 30px;
 }
 
