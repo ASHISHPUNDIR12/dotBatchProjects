@@ -12,14 +12,19 @@
      <div class="container">
         <h2 class="headline" >Weather APP</h2>
         <div class="weatherbtn">
-            <button class="yourWeather" >Your weather</button>
-            <button class="SearchWeather" >Search weather</button>
+            <button onclick="showMyTemp();" class="yourWeather" >Your weather</button>
+            <button onclick="searchWeather();" class="SearchWeather" >Search weather</button>
         </div>
         <div class="searchField">
             <input class="cityInput" type="text" placeholder="Search for city..." >
             <button class="searchbtn" ><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
+        <div class="notfounddiv">
+            <img class="notfound" src="Images/not-found.png" alt="kkef">
+        <h3> city not found</h3>
+        </div>
         <div class="weatherResult">
+           
         <p class="cityName" >delhi</p>
         <p class="condition" >mist</p>
         <div class="weatherCondition">
@@ -31,21 +36,22 @@
             <div class="windbox" >
                 <img class="statusImage" src="Images/wind.png" alt="">
                 <p>WINDSPEED</p>
-                <p>1.54 m/s</p>
+                <p class="windtext" >1.54 m/s</p>
             </div>
             <div class="humidityBox" >
                 <img class="statusImage" src="Images/humidity.png" alt="">
                 <p>HUMIDITY</p>
-                <p>84.00%</p>
+                <p class="humiditytext" >84.00%</p>
             </div>
             <div class="cloudBox" >
                 <img class="statusImage" src="Images/cloud.png" alt="">
                 <p>CLOUDS</p>
-                <p>75.00%</p>
+                <p class="cloudtext" >75.00%</p>
             </div>
         </div>
 
      </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
