@@ -70,7 +70,7 @@ html,body{
 }
 .weatherResult{
     color: whitesmoke;
-   
+   display: none;
 }
 .weatherResult p {
     font-size: 20px;
@@ -89,7 +89,7 @@ html,body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    display: none;
 
 }
 .tempStatus div {
