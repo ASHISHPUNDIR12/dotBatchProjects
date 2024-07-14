@@ -16,8 +16,8 @@ const humidity = document.querySelector(".humiditytext");
 const cloud = document.querySelector(".cloudtext");
 
 const apiId = "5aac0747a4a9c46ace2f74c231775671";
-const apiURL =
-  "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
+
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
 
 function showMyTemp() {
   temperatureStatus.style.display = "flex";
@@ -31,19 +31,19 @@ function searchWeather() {
   temptext.style.display = "none";
   weatherconditionImage.style.display = "none";
 }
+
 searchbtn.addEventListener("click", function () {
   showcityweather(cityInput.value);
 });
 
 async function showcityweather(city) {
   const response = await fetch(apiURL + city + `&appid=${apiId}`);
-
-  console.log(data);
+  
   if (response.status == 404) {
     notfound.style.display = "initial";
-  } else {
+  }
+  else {
     var data = await response.json();
-    console.log(data);
     temperatureStatus.style.display = "flex";
     weatherstatus.style.display = "initial";
     temptext.style.display = "initial";
