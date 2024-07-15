@@ -20,6 +20,13 @@ html, body {
     height: 100px;
     width: 100px;
     border: 1px solid rgb(110, 110, 226);
+    font-size: 50px;
+    font-weight :bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular' 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(3, 79, 85);
 
 }
 .row{
