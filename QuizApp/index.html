@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuizApp</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="parentContainer">
-        <div class="container">
-            <p>Simple Quiz</p>
-            <hr>
-            <p> 1. which is largest animal in the world? </p>
-            <div class="optionsContainer">
-                <div class="options option1">Shark</div>
-                <div class="options option2">Blue Whale</div>
-                <div class="options option3">Elephant</div>
-                <div class="options option4">Giraffe</div>
-            </div>
-            <button class="submitButton" >Next</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h3>Simple Quiz</h3>
+      <div class="quiz">
+        <h2 id="question">Question goes here.</h2>
+        <div id="answer-buttons">
+          <button class="btn">Option 1</button>
+          <button class="btn">Option 2</button>
+          <button class="btn">Option 3</button>
+          <button class="btn">Option 4</button>
         </div>
+        <button id="next-btn">Next</button>
+      </div>
     </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

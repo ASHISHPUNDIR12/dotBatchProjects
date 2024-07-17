@@ -1,50 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "poppins";
-}
-html , body{
-    width: 100%;
-    height: 100%;
-}
-.parentContainer{
-    width: 100%;
-    height: 100%;
-    background-color: cornflowerblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container{
-    background-color: #fff;
-    width: 40%;
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.options{
-    border: 1px solid rgb(181, 181, 238);
-    margin: 15px 0px;
-    padding: 5px;
-    border-radius: 5px ;
-}
-.submitButton{
-    width: 25%;
-   margin: auto;
-   padding: 10px 30px;
-   border: none;
-   border-radius: 10px;
-   background-color: cornflowerblue;
-}
-.options:hover{
-    border: 1px solid rgb(8, 8, 238);
-}
-.submitButton:hover{
-    background-color: rgb(4, 54, 146);
-    color: white;
-}
 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+  }
+  body {
+    background: rgb(158, 152, 209);
+  }
+  .app {
+    background: #afd0dd;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  
+  .app h3 {
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #222;
+    padding-bottom: 30px;
+  }
+  
+  .quiz {
+    /* margin: 100px auto 0; */
+    padding: 20px 0px;
+  }
+  .quiz h2 {
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+  }
+  
+  #answer-button {
+    margin: 5px 0px;
+    padding: 5px 0px;
+  }
+  
+  .btn {
+    color: #222;
+    background: #fff;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .btn:hover:not([disabled]) {
+    background: #666;
+    color: #ddd;
+  }
+  
+  .btn:disabled {
+    cursor: no-drop;
+  }
+  
+  #next-btn {
+    font-weight: 400;
+    background: #0375f7;
+    color: #fff;
+    margin: 20px auto 0px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
+    display: none;
+  }
+  #next-btn:hover {
+    background: #024860;
+  }
+  
+  .correct {
+    background: #6cf681;
+  }
+  .incorrect {
+    background: #fa7c7c;
+  }
+  
